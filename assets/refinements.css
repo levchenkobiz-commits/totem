@@ -1,0 +1,87 @@
+/* Satin controls use the site's ivory and wine palette. */
+:root {
+  --satin-fill: rgb(214 208 195 / 16%);
+  --satin-hover: rgb(214 208 195 / 24%);
+  --satin-line: rgb(214 208 195 / 30%);
+}
+.header-book,
+.hero-reserve,
+.map-route {
+  justify-content: center;
+  gap: 10px;
+  background: var(--satin-fill);
+  border: 1px solid var(--satin-line);
+  -webkit-backdrop-filter: blur(18px) saturate(.75);
+  backdrop-filter: blur(18px) saturate(.75);
+  box-shadow: inset 0 1px 0 rgb(255 250 240 / 10%);
+  text-shadow: none;
+}
+.header-book { padding: 12px 22px; }
+.header-book:hover,
+.hero-reserve:hover,
+.map-route:hover {
+  background: var(--satin-hover);
+  border-color: rgb(214 208 195 / 46%);
+  color: #ede7dc;
+}
+.booking-submit { justify-content: center; background: rgb(105 52 63 / 78%); }
+.booking-submit:hover { background: rgb(121 62 74 / 90%); }
+.booking-switch { background: rgb(214 208 195 / 10%); }
+.booking-switch-track { background: rgb(214 208 195 / 19%); }
+.map-route,
+.taxi-go {
+  min-height: 50px;
+  border-radius: 999px;
+  padding: 12px 22px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.taxi-go > span:last-child { font-size: inherit; }
+.gallery-arrows button,
+.viewer-prev,
+.viewer-next {
+  width: auto;
+  min-width: 64px;
+  min-height: 44px;
+  padding: 10px 14px;
+  font: 13px 'Manrope Variable', sans-serif;
+  background: rgb(38 32 33 / 78%);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+.menu-book-label {
+  position: absolute;
+  top: -34px;
+  left: -12px;
+  right: -12px;
+  display: block;
+  margin: 0;
+  color: #d6d0c3;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+}
+.menu-book:focus-visible { outline: 2px solid #d6d0c3; }
+.menu-list > details { scroll-margin-top: 110px; }
+.menu-category + .menu-category { margin-top: 32px; }
+.menu-category-title {
+  margin: 18px 0 8px;
+  color: #d6d0c3;
+  font-size: 18px;
+  font-weight: 600;
+}
+.menu-list .dish h4 { margin: 0 0 6px; font-size: 17px; font-weight: 400; }
+@media (max-width: 900px) {
+  .header-book { min-height: 44px; padding: 10px 18px; }
+  .menu-book-label { font-size: 13px; top: -34px; }
+  .menu-section .section-title { min-height: 0; }
+  .menu-section .section-title h2 { margin-bottom: 52px; }
+  .menu-folios { height: 430px; margin-top: 0; }
+  .gallery-arrows { gap: 6px; }
+  .gallery-arrows button { min-width: 58px; padding: 8px 10px; }
+  .map-route, .taxi-go { padding: 12px 18px; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .header-book, .hero-reserve, .map-route { background: #373332; }
+}
