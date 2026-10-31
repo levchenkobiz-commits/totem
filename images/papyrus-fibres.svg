@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+ <filter id="f"><feTurbulence type="fractalNoise" baseFrequency=".035 .6" numOctaves="3" seed="27"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".13"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+ <rect width="600" height="800" fill="#e0d7bc" filter="url(#f)"/>
+ <g stroke="#8e794e" opacity=".035" stroke-width=".6"><path d="M0 113h600M0 115h600M0 227h600M0 310h600M0 312h600M0 481h600M0 610h600M0 614h600M0 729h600"/></g>
+</svg>
